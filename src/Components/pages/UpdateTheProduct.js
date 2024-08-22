@@ -38,7 +38,7 @@ function UpdateTheProduct ({getProducts, productObject, PRODUCTS_API_URL}) {
         <input placeholder='Update Product Code' onChange={(e) => setUpdatedProductCode(e.target.value)}></input>
       </td>
       <td>
-      <input placeholder='Update Product Image' onChange={(e) => setUpdatedProductImage(e.target.value)}></input>
+      <input placeholder='Update Product Image URL' onChange={(e) => setUpdatedProductImage(e.target.value)}></input>
       </td>
       <td>
         <input placeholder='Update Description' onChange={(e) =>setUpdatedProductDescription(e.target.value)}></input>

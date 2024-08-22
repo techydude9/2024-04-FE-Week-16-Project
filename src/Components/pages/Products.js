@@ -25,9 +25,9 @@ function Products() {
 	const [newProductPrice, setnewProductPrice] = useState('')
   
   // function which will get products from API to display
-  function getProducts() {
+  async function getProducts() {
 
-    fetch(PRODUCTS_API_URL)
+    await fetch(PRODUCTS_API_URL)
       .then(data => data.json())
       .then(data => setProducts(data))
     
