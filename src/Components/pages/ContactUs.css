@@ -1,0 +1,19 @@
+.contactUsPg {
+    display:grid;
+}
+
+.signUpForm {
+    background-color: aquamarine;
+    font-weight: bold;
+}
+
+.signUpForm
+label {
+    font-weight: bold;
+}
+
+.ctDivTable {
+    margin-top: 15%;
+    background-color: rgb(245, 245, 213, 0.8);
+    font-size: larger;
+}

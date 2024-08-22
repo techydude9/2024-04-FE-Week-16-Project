@@ -1,0 +1,23 @@
+.footerDiv {
+    display: flex;
+    border: 2px black groove;
+    border-radius: 6px;
+    color: blanchedalmond;
+    background-color: #798cbb;
+    opacity: 80%;
+    margin-top: 15px;
+}
+
+.copyRt {
+    margin-left: 35%;
+    font-size: small;
+    align-items: center;
+    padding: 3px;
+    color: white;
+}
+
+.copyRt img {
+    margin-left: 5px;
+    height: 16px;
+    width: 18px;
+}

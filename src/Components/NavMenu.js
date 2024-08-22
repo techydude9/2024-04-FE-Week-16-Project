@@ -8,6 +8,7 @@ import Home from './pages/Home.js';
 import Products from './pages/Products.js'
 import About from './pages/About.js'
 import ContactUs from './pages/ContactUs.js'
+import Footer from './Footer.js';
 
 function NavMenu () {
 
@@ -33,6 +34,7 @@ function NavMenu () {
             <Home />
           </Route>
         </Switch>
+        <Footer />
       </div>
     </Router>
     )
