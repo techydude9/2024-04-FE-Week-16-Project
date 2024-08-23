@@ -45,6 +45,7 @@ function Products() {
 		<div className="productsPg">
 		<h1>Inventory Management System - Products</h1>
 
+		{/* AddTheProduct Component */}
 		<AddTheProduct getProducts={getProducts} PRODUCTS_API_URL={PRODUCTS_API_URL} />
 	  
 		{/* HTML for display all the products */}

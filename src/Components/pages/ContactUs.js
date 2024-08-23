@@ -13,7 +13,7 @@ function ContactUs() {
 				<div className='col'>
 					<ContactTable />
 				</div>
-				<ContactForm />
+					<ContactForm />
 			</div>
 		</div>
 	);

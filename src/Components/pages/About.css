@@ -1,0 +1,9 @@
+.aboutImg1 img {
+    height: 95%;
+    width: 95%;
+}
+
+.aboutText {
+    display:flexbox;
+    font-size: larger;
+}

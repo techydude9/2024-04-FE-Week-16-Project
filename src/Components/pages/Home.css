@@ -1,3 +1,7 @@
+.homePage {
+    display: block;
+}
+
 .homePage h2 {
     text-align: center;
 }
