@@ -31,7 +31,7 @@ function AddTheProduct ({getProducts, PRODUCTS_API_URL}) {
 	}
 
     return (
-        <>
+        <div className='container'>
         <Accordion>
 			<Accordion.Item eventKey="0">
 				<Accordion.Header>
@@ -61,7 +61,7 @@ function AddTheProduct ({getProducts, PRODUCTS_API_URL}) {
 				</Accordion.Body>
 			</Accordion.Item>
 	   </Accordion>
-    </>
+    </div>
     )
 }
 
