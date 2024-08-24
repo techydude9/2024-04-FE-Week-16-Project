@@ -3,6 +3,10 @@
     width: 95%;
 }
 
+#aboutImg2 {
+    height: 95%;
+    width: 95%;
+}
 .aboutText {
     display:flexbox;
     font-size: larger;

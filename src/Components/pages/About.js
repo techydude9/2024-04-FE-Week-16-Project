@@ -1,10 +1,11 @@
 import React from 'react';
 import'./About.css';
 import image1 from '../../images/RR Portrait.jpg';
+import image2 from '../../images/sunset image.jpg';
 
-const aboutWords = `This is a great place to put the text for describing who we are and why we are so awesome.
-					So is this thing working like I hope it will?
-										Yippie`;
+const aboutWords = `Founded in 2021 by Bob Ruzga, Ruzga Solutions Group LLC set out to provide the best in Products and Services 
+for the landscaping industry.  In addtion to selling the highest quality products and the lowest possible prices, we also provide
+IT Services to meet the needs of your organization. We look forward to providing you the best service in the industry`;
 
 function About() {
 	
@@ -20,6 +21,11 @@ function About() {
 				</div>
 				<div className='aboutText col-8'>
 					<p>{aboutWords}</p>
+				</div>
+			</div>
+			<div className='row'>
+				<div className='col-12'>
+					<img id='aboutImg2' src={image2} />
 				</div>
 			</div>
 		</div>
