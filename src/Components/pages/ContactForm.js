@@ -1,7 +1,7 @@
 import React from 'react';
 import './ContactUs.css';
 import {useState} from 'react';
-import ThankYou from './ThankYou.js';
+import ThankYou from './ThankYou';
 
 
 function ContactForm () {
@@ -9,15 +9,20 @@ function ContactForm () {
     const [formLName, setFormLName] = useState('');
     const [formEmail, setFormEmail] = useState('');
     const [formPhone, setFormPhone] = useState('');
-   
+
+    // const [show, setShow] = useState(false);
+
+    // const handleClose = () => setShow(false);
+    // const handleShow = () => setShow(true);
+
+      
     function sendTY(){
         console.log('Send Thank You');
 
-        alert(`Thank you! ${formFName} ${formLName} 
+       alert(`Thank you! ${formFName} ${formLName} 
         ${formEmail}
-        ${formPhone}`);
-        // <ThankYou formFName={formFName} formLName={formLName} formEmail={formEmail} formPhone={formPhone} />
-        // <ThankYou />
+        ${formPhone}`); 
+
     }
 
     return (
@@ -42,6 +47,8 @@ function ContactForm () {
 
                 <button className='mt-3 btn btn-info' type='button' 
                 onClick={() => sendTY()} >Send</button>
+
+                <ThankYou formFName={formFName} formLName={formLName} formEmail={formEmail} formPhone={formPhone} />
             </form>
         </div>
     )
