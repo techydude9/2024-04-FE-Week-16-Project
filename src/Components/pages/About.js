@@ -5,7 +5,7 @@ import image2 from '../../images/sunset image.jpg';
 
 const aboutWords = `Founded in 2021 by Bob Ruzga, Ruzga Solutions Group LLC set out to provide the best in Products and Services 
 for the landscaping industry.  In addtion to selling the highest quality products and the lowest possible prices, we also provide
-IT Services to meet the needs of your organization. We look forward to providing you the best service in the industry`;
+IT Services to meet the needs of your organization. We look forward to providing you the best service in the industry.`;
 
 function About() {
 	

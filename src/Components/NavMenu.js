@@ -10,6 +10,9 @@ import About from './pages/About.js'
 import ContactUs from './pages/ContactUs.js'
 import Footer from './Footer.js';
 
+/*  This is the main Nav wrapper. This uses the React Router components of 
+    BrowserRouter, Router, Switch and Route.  Its called from App.js */
+    
 function NavMenu () {
 
   return(

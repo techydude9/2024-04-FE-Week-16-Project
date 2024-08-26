@@ -6,6 +6,7 @@
 #aboutImg2 {
     height: 95%;
     width: 95%;
+    margin-top: 10px;
 }
 .aboutText {
     display:flexbox;

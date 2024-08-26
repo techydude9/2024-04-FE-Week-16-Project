@@ -3,27 +3,21 @@ import './ContactUs.css';
 import {useState} from 'react';
 import ThankYou from './ThankYou';
 
+/* This is the ContactForm Component. Its role is to display the Contact Us submission form
+    It also will call the ThankYou component when the 'Send' button is pressed on this form. This
+    component is called from the ContactUs page */
 
 function ContactForm () {
+
+    // consts for the Signup form and uses States
     const [formFName, setFormFName] = useState('');
     const [formLName, setFormLName] = useState('');
     const [formEmail, setFormEmail] = useState('');
     const [formPhone, setFormPhone] = useState('');
 
-    // const [show, setShow] = useState(false);
-
-    // const handleClose = () => setShow(false);
-    // const handleShow = () => setShow(true);
-
-      
-    function sendTY(){
-        console.log('Send Thank You');
-
-       alert(`Thank you! ${formFName} ${formLName} 
-        ${formEmail}
-        ${formPhone}`); 
-
-    }
+    // consts to handle the display of a Thank you modal upon the click of the Send button
+    const [show, setShow] = useState(false);
+    const handleShow = () => setShow(true);
 
     return (
         <div className='signUpForm col form-group'>
@@ -46,9 +40,9 @@ function ContactForm () {
                 onChange={(e) => setFormPhone(e.target.value)}></input>
 
                 <button className='mt-3 btn btn-info' type='button' 
-                onClick={() => sendTY()} >Send</button>
+                onClick={handleShow} >Send</button>
 
-                <ThankYou formFName={formFName} formLName={formLName} formEmail={formEmail} formPhone={formPhone} />
+                <ThankYou show={show} setShow={setShow} formFName={formFName} formLName={formLName} formEmail={formEmail} formPhone={formPhone} />
             </form>
         </div>
     )

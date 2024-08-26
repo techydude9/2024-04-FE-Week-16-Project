@@ -6,6 +6,10 @@ import '../../../node_modules/bootstrap/dist/css/bootstrap.css';
 import UpdateTheProduct from './UpdateTheProduct';
 import AddTheProduct from './AddTheProduct';
 
+/*  This component handles the Product page. It handles the delete product directly while it calls 
+	on the UpdateTheProduct and AddTheProduct components to 'Put' and 'Post". Additionally,
+	the Product.css is called in this and the called components for keep styling consistent.*/
+
 function Products() {
 
 	// set const to URL of mockAPI db resource

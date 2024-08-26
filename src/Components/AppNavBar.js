@@ -3,6 +3,10 @@ import '../App.css';
 import './NavMenu.css';
 import { NavLink, Link } from 'react-router-dom';
 
+/*  This component handles the NavBar.  This includes the changing of the navbar from the full width
+    bar to the hamburger icon with dropdown when the screen size is reduced to 501px or less.  This 
+    component is using the React Router NavLink and Link to handle the navigation and styling */
+
 function AppNavBar() {
 
     const [menuOpen, setMenuOpen] = useState(false)  //Used to toggle menu hamburger/main on width

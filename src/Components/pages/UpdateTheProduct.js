@@ -4,6 +4,10 @@ import Button from 'react-bootstrap/Button';
 import Collapse from 'react-bootstrap/Collapse';
 import '../../../node_modules/bootstrap/dist/css/bootstrap.css';
 
+/*  This component handles the updating of a single product. Its called from Products. This component 
+    uses the Collapse React bootstrap components. It receives the function 'getProducts', the product
+    object to be updated and the product API URI*/
+
 function UpdateTheProduct ({getProducts, productObject, PRODUCTS_API_URL}) {
 /* updateProduct function */
   //define useState variable and function for updating products

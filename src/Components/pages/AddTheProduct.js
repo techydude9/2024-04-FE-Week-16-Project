@@ -4,6 +4,10 @@ import Accordion from 'react-bootstrap/Accordion';
 import './Products.css';
 import '../../../node_modules/bootstrap/dist/css/bootstrap.css';
 
+/* This component is used to handle the Add new Products to the database.
+	It uses the Acordion components of React Bootstrap along with 
+	bootstrap Card styling. The function 'getProducts' and Product API URL are
+	received from the calling component - Products */
 
 function AddTheProduct ({getProducts, PRODUCTS_API_URL}) {
 

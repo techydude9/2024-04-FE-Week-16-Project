@@ -2,22 +2,20 @@ import React from 'react';
 import './ContactUs.css';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import {useState} from 'react';
 
-function ThankYou({formFName, formLName, formEmail, formPhone}) {
-    const [show, setShow] = useState(false);
 
+/* This component displays a Thank you Modal when a Contact Us form is completed in the calling component
+  This module uses the React Bootstrap Modal to show a thank you message with the data from the form.
+  It is intentional that this form data is NOT stored anywhere. */
+
+function ThankYou({show, setShow, formFName, formLName, formEmail, formPhone}) {
+   
     const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-    
+      
     console.log('In Thank You');
 
     return (
-        <div>
-        <Button className="btn btn-sm" variant="primary" onClick={handleShow}>
-          Wanna Say Thank You
-        </Button>
-  
+      <div>
         <Modal show={show} onHide={handleClose}>
           <Modal.Header closeButton>
             <Modal.Title>Thank You</Modal.Title>

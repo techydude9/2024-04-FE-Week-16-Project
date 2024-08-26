@@ -1,6 +1,7 @@
 import React from 'react';
 import './ContactUs.css';
 
+/* This component renders the contact us information table. Its called from the ContactUs page*/
 function ContactTable () {
 
     return (
